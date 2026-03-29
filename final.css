@@ -213,17 +213,20 @@ SHOWS
 */
 
 .shows__grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 40px 0;
     margin: 300px 0;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .show__card {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 200px;
 }
 
 .show__card img {
@@ -231,6 +234,7 @@ SHOWS
     border-radius: 8px;
     transition: all 0.3s ease;
     cursor: pointer;
+    width: 100%;
 }
 
 .show__card img:hover {
@@ -289,5 +293,13 @@ SHOWS
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 1200px) {
+
+    #shows .row {
+        width: 100%;
+        padding: 0 64px;
     }
 }
