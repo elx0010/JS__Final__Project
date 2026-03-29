@@ -33,7 +33,7 @@ function focusSearch() {
 
 function showTheShow(id) {
     localStorage.setItem("mal_id", id);
-    window.location.href = `${window.location.origin}/show.html`;
+    window.location.href = `show.html`;
 }
 
 
