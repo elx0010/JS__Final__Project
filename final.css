@@ -58,6 +58,7 @@ NAVIGATION BAR
     justify-content: space-between;
     align-items: center;
     padding-top: 55px;
+    width: 100%;
 }
 
 .nav__link--list {
@@ -300,6 +301,7 @@ SHOWS
 
     #shows .row {
         width: 100%;
-        padding: 0 64px;
+        padding: 0 256px;
+        max-width: fit-content;
     }
 }
